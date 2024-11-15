@@ -11,7 +11,7 @@ def analizuj_tekst(tekst):
     :return: Słownik z wynikami analizy.
     """
     akapity = tekst.split('\n')
-    liczba_akapity = len(akapity)
+    liczba_akapity = len(akapity)-2
     zdania = re.split(r'[.!?]', tekst)
     liczba_zdan = len([zdanie for zdanie in zdania if zdanie.strip() != ""])
     slowa = tekst.split()
